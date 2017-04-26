@@ -15,9 +15,14 @@ public class Json {
         List<User> myUser = new ArrayList<>();
 
         for (int i=0; i<myArray.length(); i++){
+
             JSONObject item = myArray.getJSONObject(i);
+            User usuario = new User();
+            usuario.setUsername(item.getString("username"));
+            usuario.setPhone(item.getString("phone"));
+            usuario.setUsername(item.getString("username"));
 
-
+            myUser.add(usuario);
         }
 
         return myUser;

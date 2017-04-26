@@ -19,6 +19,13 @@
             android:layout_height="wrap_content"
             android:visibility="gone"/>
 
+        <Button
+            android:id="@+id/boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cargar datos"
+            android:onClick="onClickButton"/>
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/myRecycler"
             android:layout_width="match_parent"
